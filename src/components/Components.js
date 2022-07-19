@@ -11,6 +11,7 @@ import ProductReviews from './ProductReviews/ProductReviews';
 import Videos from './videos/Videos';
 import Banner from './banner/Banner';
 import Footer from './footer/Footer';
+import NavOptions from './navbar/NavOptions';
 import data from '../data/data.json';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 
@@ -19,6 +20,9 @@ const Component = () => {
         <Router>
             <PreNavbar/>
             <Navbar/>
+            <NavOptions miPhones={data.miPhones} redmiPhones={data.redmiPhones} tv={data.tv} laptop={data.laptop}
+            fitnessAndLifeStyle={data.fitnessAndLifeStyle} home={data.home} audio={data.audio} accessories={data.accessories}/>
+             
             <Slider start={data.banner.start}/>
             <Ads offer={data.offer}/>
             <Heading text="STAR PRODUCTS"/>
