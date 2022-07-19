@@ -10,6 +10,7 @@ import HotAccessories from './HotAccessories/HotAccessories';
 import ProductReviews from './ProductReviews/ProductReviews';
 import Videos from './videos/Videos';
 import Banner from './banner/Banner';
+import Footer from './footer/Footer';
 import data from '../data/data.json';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 
@@ -51,6 +52,7 @@ const Component = () => {
             <Videos videos={data.videos}/>
             <Heading text="IN THE PRESS"/>
             <Banner banner={data.banner}/>
+            <Footer footer={data.footer}/>
         </Router>
     );
 };
